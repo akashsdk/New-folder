@@ -1,24 +1,40 @@
 import React from 'react';
-import { TouchableOpacity, Text, SafeAreaView, View } from 'react-native'
+import { TouchableOpacity, Text, SafeAreaView, View,TextInput } from 'react-native'
 function Input(props) {
     return (
+        <TouchableOpacity >
         <View style={{
             height: 50,
+            width:'90%',
             borderRadius: 25,
-            borderColor:'black',
-            backgroundColor: 'red',
+            borderColor:'#808080',
+            borderWidth:1,
             margin: 20,
+            alignItems: 'center',
+            marginTop:10,
+            marginBottom:10,
             flexDirection:'row',
-            display:'flex'
+            paddingHorizontal: 15,
+        
+        
         }}>
-            <View>
-            <Text>gjgch</Text>
-            </View>
 
-            <View>
-            <Text>gjg</Text>
-            </View>
+            <TextInput onChangeText={props.onChange} placeholder={props.placeholder}
+            style= {{
+                color:'#808080',
+                margin:5,
+                flex:5,
+
+            }}>
+
+            </TextInput>
+            <props.icon style={{
+                margin: 5,
+                flex:1,
+            }}/>
         </View>
+            
+            </TouchableOpacity>
     );
 }
 
