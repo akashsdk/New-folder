@@ -45,7 +45,7 @@ function LogIn(props) {
                 <Input onChange={setPassword} placeholder='Password' icon={() => (
                     <Entypo name="lock" size={30} color="#1C2348" />
                 )} />
-                <Button buttonName='Log In' disable={UserName && Password ? false : true}>
+                <Button onPress={() => {props.navigation.navigate('Home Page')}}>
 
                 </Button>
                 <TouchableOpacity onPress={() => { props.navigation.navigate('Forget Password') }} style={{
@@ -58,7 +58,7 @@ function LogIn(props) {
                         Forget Password ?
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => { props.navigation.navigate('Create new account') }} style={{
+                <TouchableOpacity onPress={() => { props.navigation.navigate('Create Account') }} style={{
                     marginTop: 20,
                 }}>
                     <Text style={{

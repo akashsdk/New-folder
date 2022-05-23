@@ -35,7 +35,8 @@ function ForgetPassword(props) {
                 <Input onChange={setUserName} placeholder='Email' icon={() => (
                     <MaterialIcons name="email" size={24} color="#1C2348" />
                 )} />
-                <Button buttonName='Send' disable={UserName ? false : true}>
+                <Button onPress={() => {props.navigation.navigate('Home Page')}}
+                buttonName='Send' disable={UserName ? false : true}>
                 
                 </Button>
             </View>
