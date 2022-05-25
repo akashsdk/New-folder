@@ -8,21 +8,7 @@ function HomeScreen(props) {
         <ScrollView>
             <Text>HomeScreen</Text>
             <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
-            <Text>HomeScreen</Text>
-            <Text>akaksj</Text>
+            
         </ScrollView>
     );
 }
